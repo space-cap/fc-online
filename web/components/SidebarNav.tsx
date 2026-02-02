@@ -18,7 +18,7 @@ export function SidebarNav({ docs }: { docs: Doc[] }) {
     return (
         <>
             {/* Mobile Toggle */}
-            <div className="md:hidden fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 border-b dark:border-gray-800 px-4 py-3 flex items-center justify-between transition-colors">
+            <div className="md:hidden fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 border-b dark:border-gray-800 px-4 py-3 flex items-center justify-between transition-colors text-gray-900 dark:text-white">
                 <span className="font-bold text-lg">FC Online Guide</span>
                 <div className="flex items-center gap-2">
                     <ThemeToggle />
@@ -51,8 +51,8 @@ export function SidebarNav({ docs }: { docs: Doc[] }) {
                                     href={href}
                                     onClick={() => setIsOpen(false)}
                                     className={`block px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive
-                                            ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200'
-                                            : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
+                                        ? 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200'
+                                        : 'text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800'
                                         }`}
                                 >
                                     {doc.title}
