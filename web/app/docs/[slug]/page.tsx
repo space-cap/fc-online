@@ -27,7 +27,7 @@ export default async function DocPage({ params }: { params: Promise<{ slug: stri
                 title={doc.title}
                 subtitle="FC ONLINE MASTER GUIDE"
             />
-            <article className="prose prose-invert max-w-none">
+            <article className="prose dark:prose-invert max-w-none">
                 <MDXRemote source={doc.content} components={components} />
             </article>
         </div>

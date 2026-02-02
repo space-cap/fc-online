@@ -49,4 +49,7 @@ export const components = {
     pre: (props: any) => (
         <pre className="bg-gray-100 dark:bg-gray-950 p-4 rounded-lg overflow-x-auto border border-gray-200 dark:border-gray-800 my-6 text-sm" {...props} />
     ),
+    strong: (props: any) => (
+        <strong className="font-bold text-gray-900 dark:text-white" {...props} />
+    ),
 };
